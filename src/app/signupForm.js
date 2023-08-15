@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js'
 import { auth } from './firebase.js'
 
@@ -19,6 +20,14 @@ signUpForm.addEventListener('submit', async (e) => {
     const modal = bootstrap.Modal.getInstance(signupModal)
     modal.hide()
   } catch (error) {
-    console.log(error)
+    if (error.code === 'auth/email-already-in-use') {
+      alert('Email already in use')
+    } else if (error.code === 'auth/invalid-email') {
+      alert('Invalid email')
+    } else if (error.code === 'auth/weak-password') {
+      alert('Password must be at least 6 characters')
+    } else if (error.code) {
+      alert('something went wrong')
+    }
   }
 })
