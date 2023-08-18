@@ -27,6 +27,12 @@ const firebaseConfig = {
 firebase server
 ```
 
+## Features
+
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+
+This application/site was created as a example of [faztweb](https://www.youtube.com/@FaztTech)
+
 ### Built With
 
 - [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
