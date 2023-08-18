@@ -12,7 +12,7 @@
 
 ```sh
 git clone https://github.com/vaancillo/firebase-auth-project.git
-cd firebase-auth-example
+cd firebase-auth-project
 npm i
 ```
 
