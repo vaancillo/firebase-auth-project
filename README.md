@@ -7,7 +7,7 @@
     </a>
   </h3>
 </div>
-## Installation
+# Installation
 
 ```sh
 git clone https://github.com/vaancillo/firebase-auth-project.git
